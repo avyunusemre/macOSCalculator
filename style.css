@@ -1,0 +1,68 @@
+:root {
+    --table-width : 243px;
+    --table-height: 327px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: aliceblue;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+} 
+
+table, tr, td{
+    border-collapse: collapse;
+    border: 1px solid rgb(38, 38, 39);
+}
+
+.calculator {
+    table-layout: fixed;
+    width: var(--table-width);
+    height: var(--table-height);
+}
+
+#display {
+    background-color: rgb(38, 38, 39);
+    height: calc(var(--table-height) / 4);
+    text-align: right;
+    vertical-align: bottom;
+    font-size: 48px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+    padding-right: 16px;
+}
+
+.buttons {
+    text-align: center;
+}
+
+tr {
+    background-color: rgb(92, 92, 92);
+}
+
+tr td:hover {
+    background-color: rgb(157, 157, 158);
+}
+
+tr:nth-child(2) td {
+    background-color: rgb(59, 59, 60);
+}
+
+tr:nth-child(2) td:hover {
+    background-color: rgb(92, 92, 92);
+}
+
+tr td:last-child {
+    background-color: rgb(242, 163, 60);
+}
+
+tr td:last-child:hover {
+    background-color: rgb(192, 129, 46);
+}
